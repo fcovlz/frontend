@@ -1,0 +1,128 @@
+body{
+    background-color: #245257;
+}
+#head_container{
+    background: #246f78;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat (8, 1fr);
+    grid-template-rows: repeat (8, 1fr);
+    grid-template-areas:
+    "home"
+    "aboutme"
+    "engineering"
+    "softskills"
+    "projects"
+    "links"
+    "linkedin"
+    "github";
+
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.3cm;
+    font-family: georgia;
+}
+
+@media(min-width: 900px){
+    #head_container{
+        background: #246f78;
+        width: 100%;
+        align: center;
+
+        display: grid;
+        grid-template-columns: repeat (8, 1fr);
+        grid-template-rows: 50px;
+        grid-template-areas:
+        "home aboutme engineering softskills projects links linkedin github";
+
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+        line-height: 1.3cm;
+        font-family: georgia;
+    }
+}
+@media(min-width: 1200px){
+    #head_container{
+        background: #246f78;
+        width: 1200px;
+
+        display: grid;
+        grid-template-columns: repeat (8, 1fr);
+        grid-template-rows: 50px;
+        grid-template-areas:
+        "home aboutme engineering softskills projects links linkedin github";
+
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+        line-height: 1.3cm;
+        font-family: georgia;
+    }
+}
+a:link {
+    color: white;
+    text-decoration:none;
+}
+a:visited {
+    color: white;
+}
+#headlink:hover{
+    background-color: #2e6957;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+}
+.homelink{
+    grid-area: home;
+}
+.aboutmelink{
+    grid-area: aboutme;
+}
+.engineeringlink{
+    grid-area: engineering;
+}
+.softskillslink{
+    grid-area: softskills;
+}
+.projectslink{
+    grid-area: projects;
+}
+.linkslink{
+    grid-area: links;
+}
+.linkedinlink{
+    grid-area: linkedin;
+}
+.githublink{
+    grid-area: github;
+}
+#footer{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: georgia;
+}
+.title_text_style{
+    color: #00ff00 !important;
+}
+.quicklinks{
+    margin-top: 30px;
+    grid-area: quicklinks;
+}
+#quicklinkurl{
+    color: yellow !important;
+    font-size: 1.2em !important;
+    text-decoration: underline;
+}
+#textbox{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: white;
+    font-family: Garamond;
+}
