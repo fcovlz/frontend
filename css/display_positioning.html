@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            body font-size:16pz;
+            /*background-color: #84e4f7;*/
+            /*color #d0f1cf;*/
+            /*margin: 50px;*/
+            /*display: none;*/
+            /*display: inline;*/
+            /*display: block;*/
+            /*display: inline-block;*/
+            position: absolute;
+        }
+        #boxone {
+          background: red;
+          top: 220px;
+          left: 220px;
+          z-index: 3;
+        }
+
+        #boxtwo {
+          background: yellow;
+          top: 440px;
+          left: 440px;
+          z-index: 5;
+        }
+
+        #boxfour {
+          background: blue;
+          top: 660px;
+          left: 660px;
+          z-index: 1;
+          font-size: 1.5em
+        }
+        #boxfifth {
+          background: orange;
+          top: 880px;
+          left: 880px;
+          z-index: 1;
+          font-size: 200%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="boxone"> first box</div>
+    <div class="box" id="boxtwo"> second box</div>
+    <div class="box" id="boxthree"> third box</div>
+    <div class="box" id="boxfour"> fourth box</div>
+    <div class="box" id="boxfifth"> fifth box</div>
+  </body>
+</html>
