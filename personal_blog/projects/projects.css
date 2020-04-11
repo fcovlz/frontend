@@ -1,0 +1,206 @@
+body{
+    background-color: #245257;
+}
+#head_container{
+    background: #246f78;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat (8, 1fr);
+    grid-template-rows: repeat (8, 1fr);
+    grid-template-areas:
+    "home"
+    "aboutme"
+    "engineering"
+    "softskills"
+    "projects"
+    "links"
+    "linkedin"
+    "github";
+
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.3cm;
+    font-family: georgia;
+}
+@media(min-width: 900px){
+    #head_container{
+        background: #246f78;
+        width: 100%;
+        align: center;
+
+        display: grid;
+        grid-template-columns: repeat (8, 1fr);
+        grid-template-rows: 50px;
+        grid-template-areas:
+        "home aboutme engineering softskills projects links linkedin github";
+
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+        line-height: 1.3cm;
+        font-family: georgia;
+    }
+}
+@media(min-width: 1200px){
+    #head_container{
+        background: #246f78;
+        width: 1200px;
+
+        display: grid;
+        grid-template-columns: repeat (8, 1fr);
+        grid-template-rows: 50px;
+        grid-template-areas:
+        "home aboutme engineering softskills projects links linkedin github";
+
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+        line-height: 1.3cm;
+        font-family: georgia;
+    }
+}
+a:link {
+    color: white;
+    text-decoration:none;
+}
+a:visited {
+    color: white;
+}
+#headlink:hover{
+    background-color: #2e6957;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+}
+.homelink{
+    grid-area: home;
+}
+.aboutmelink{
+    grid-area: aboutme;
+}
+.engineeringlink{
+    grid-area: engineering;
+}
+.softskillslink{
+    grid-area: softskills;
+}
+.projectslink{
+    grid-area: projects;
+}
+.linkslink{
+    grid-area: links;
+}
+.linkedinlink{
+    grid-area: linkedin;
+}
+.githublink{
+    grid-area: github;
+}
+#footer{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
+    font-family: georgia;
+}
+.title_text_style{
+    color: #00ff00 !important;
+}
+.textbar{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    text-align: left;
+    color: white;
+    font-family: Garamond;
+}
+.container{
+    width: 100%;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 400px 400px 400px 400px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "title"
+    "topLeft"
+    "topRight"
+    "bottomLeft"
+    "bottomRight";
+}
+@media(min-width: 1200px){
+    .container{
+        width: 1200px;
+        justify-content: center;
+
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 150px 400px 400px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "title title"
+        "topLeft topRight"
+        "bottomLeft bottomRight";
+    }
+}
+.box{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    padding: 10px;
+}
+#title{
+    grid-area: title;
+}
+#topLeft{
+    grid-area: topLeft;
+    background-image: url('images/arduino.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#topRight{
+    grid-area: topRight;
+    background-image: url('images/automation.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#bottomLeft{
+    grid-area: bottomLeft;
+    background-image: url('images/data_science.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#bottomRight{
+    grid-area: bottomRight;
+    background-image: url('images/web_development.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.button {
+  border: 2px solid #00ff00;
+  width: 150px;
+  height: 40px;
+  padding: 3px 3px;
+  transition-duration: 0.4s;
+  display: inline-block;
+  cursor: pointer;
+
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.button:hover {
+  background-color: #00ff00;
+  color: black;
+}
