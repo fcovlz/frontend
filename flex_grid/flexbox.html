@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+            align-items: center;
+            /*align-items: stretch; if strech, delete width and height from box*/
+            /*align-items: center;*/
+            /*align-items: start;*/
+            /*align-items: end;*/
+            justify-content: center;
+            /*justify-content: baseline;*/
+            /*justify-content: start;*/
+            /*justify-content: space-between;*/
+            /*justify-content: space-around;*/
+            /*justify-content: space-evenly;*/
+            border: 2px solid yellow;
+        }
+        .box{
+            width: 250px;
+            height: 150px;
+            border: 1px solid red
+        }
+        #one{
+            order: 3;
+        }
+        #two{
+            order: 1;
+        }
+        #three{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="two">Box 2</div>
+        <div class="box" id="one">Box 1</div>
+        <div class="box" id="three">Box 3</div>
+    </div>
+</body>
+</html>
